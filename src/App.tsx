@@ -17,9 +17,9 @@ function App() {
         {
             label: 'Services',
             children: [
-                { label: 'Build Furniture', url: '/products/a' },
-                { label: 'Product Z', url: '/products/z' }, // Demonstrates sorting
-                { label: 'Product Showcase', url: '/products/showcase' },
+                { label: 'Assemble Furniture', url: '/products/a' },
+                { label: 'Install Hardware', url: '/products/z' }, // Demonstrates sorting
+                { label: 'Organize', url: '/products/showcase' },
             ],
         },
         {
