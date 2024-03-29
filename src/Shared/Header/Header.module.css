@@ -1,0 +1,15 @@
+.headerNav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a405a; /* Example background color */
+    z-index: 100; /* Example, ensure it's on top */
+    justify-content: space-between; /* Distribute space between logo and menu */
+    align-items: center; /* Vertically center the logo and menu items */
+}

@@ -1,0 +1,24 @@
+.menuList {
+    background-color: #1a405a;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.menuList > li {
+    position: relative;
+    /* Consider adding 'display: inline-block' if needed */
+}
+
+.menuList > li > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a405a;
+    padding: 0;
+}
+
+.menuList > li:hover > ul {
+    display: block;
+}
