@@ -20,6 +20,11 @@ function App() {
                 { label: 'Assemble Furniture', url: '/products/a' },
                 { label: 'Install Hardware', url: '/products/z' }, // Demonstrates sorting
                 { label: 'Organize', url: '/products/showcase' },
+                { label: 'Furniture Assembly', children: [
+                        {label: 'Ikea/Amazon/Walmart', url: '/furniture/assembly/details'},
+                        {label: 'Request A Quote', url: '/furniture/assembly/quote'}
+                    ]
+                }
             ],
         },
         {
@@ -29,7 +34,7 @@ function App() {
                 { label: 'Mission Statement', url: '/about/mission' },
             ],
         },
-        { label: 'Contact', url: '/contact' },
+        { label: 'Schedule A Time', url: '/schedule' },
     ];
 
     return (

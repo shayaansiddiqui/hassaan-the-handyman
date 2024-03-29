@@ -7,10 +7,9 @@
 
 .menuList > li {
     position: relative;
-    /* Consider adding 'display: inline-block' if needed */
 }
 
-.menuList > li > ul {
+.menuList > li > ul { /* Target only direct children */
     display: none;
     position: absolute;
     top: 100%;
@@ -21,4 +20,11 @@
 
 .menuList > li:hover > ul {
     display: block;
+}
+
+.submenu {
+    position: absolute; /* Adjust positioning as needed */
+    top:  0;/* Adjust top position */
+    left: 0;/* Adjust left position */
+    background-color: #1a405a;
 }

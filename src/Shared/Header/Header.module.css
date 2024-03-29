@@ -13,3 +13,14 @@
     justify-content: space-between; /* Distribute space between logo and menu */
     align-items: center; /* Vertically center the logo and menu items */
 }
+
+img.logo {
+    border-radius: 50%;
+    height: 75px;
+}
+
+span.slogan {
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+}
