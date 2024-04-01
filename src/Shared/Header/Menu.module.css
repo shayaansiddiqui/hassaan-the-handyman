@@ -39,4 +39,8 @@
     color: #fff;
 }
 
-/* Add hover styles as needed */
+/**[@id="root"]/header/nav/ul/li[2]/div/ul/li[2]/div*/
+ul.menuList > ul > li:hover > div > ul > li:hover > div {
+    top: 0;
+    left: 105px;
+}
