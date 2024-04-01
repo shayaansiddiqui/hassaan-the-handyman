@@ -19,7 +19,10 @@ function App() {
             children: [
                 { label: 'Assemble Furniture', url: '/products/a' },
                 { label: 'Install Hardware', url: '/products/z' }, // Demonstrates sorting
-                { label: 'Organize', url: '/products/showcase' },
+                { label: 'Organize', url: '/products/showcase', children: [
+                        {label: 'Garage', url: '/organize/garage'},
+                        {label: 'Shed', url: '/organize/shed'}
+                    ]},
                 { label: 'Furniture Assembly', children: [
                         {label: 'Ikea/Amazon/Walmart', url: '/furniture/assembly/details'},
                         {label: 'Request A Quote', url: '/furniture/assembly/quote'}
