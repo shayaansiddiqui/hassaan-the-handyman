@@ -13,7 +13,7 @@ const Header = ({menuData}: { menuData: MenuItem[] }) => {
                         <img className={styles.logo} src="/hassaan_logo.png" alt="Handyman Logo"/>
                         <span className={styles.slogan}>Handyman Services with Hassaan</span>
                     </div>
-                    <Menu items={menuData}/>
+                    <Menu items={menuData} root={0}/>
                 </nav>
             </header>
         );
