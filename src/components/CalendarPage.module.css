@@ -1,0 +1,13 @@
+.calendar-container {
+    display: flex; /* Arrange calendar and form side-by-side */
+    justify-content: space-around;
+    align-items: flex-start; /* Adjust alignment as needed */
+    margin: 20px; /* Add some spacing */
+}
+
+.booking-form {
+    width: 40%; /* Adjust the width of your form */
+    padding: 20px;
+    border: 1px solid #ccc; /* Add a subtle border */
+    border-radius: 5px;
+}

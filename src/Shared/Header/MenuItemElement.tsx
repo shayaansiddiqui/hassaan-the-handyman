@@ -1,5 +1,5 @@
 // Simple component for a single menu item (assuming you have styling)
-import {MenuItem} from "../../Interface/MenuItem.tsx";
+import {MenuItem} from "../../interfaces/MenuItem.tsx";
 import styles from './MenuItemElement.module.css'
 
 const MenuItemElement = ({ label, url }: MenuItem) => (

@@ -4,7 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Footer from "./Shared/Footer/Footer.tsx";
 import Header from "./Shared/Header/Header.tsx";
-import {MenuItem} from "./Interface/MenuItem.tsx";
+import {MenuItem} from "./interfaces/MenuItem.tsx";
+import CalendarPage from "./components/CalendarPage.tsx";
 
 function App() {
     const apiUrl = import.meta.env.VITE_API_URL;
@@ -13,37 +14,42 @@ function App() {
     const [count, setCount] = useState(0)
 
     const menuData: MenuItem[] = [
-        { label: 'Home', url: '/' },
+        {label: 'Home', url: '/'},
         {
             label: 'Services',
             children: [
-                { label: 'Assemble Furniture', url: '/products/a' },
-                { label: 'Install Hardware', url: '/products/z' }, // Demonstrates sorting
-                { label: 'Organize', url: '/products/showcase', children: [
+                {
+                    label: 'Organize', url: '/products/showcase', children: [
                         {label: 'Garage', url: '/organize/garage'},
-                        {label: 'Shed', url: '/organize/shed'}
-                    ]},
-                { label: 'Furniture Assembly', children: [
-                        {label: 'Ikea/Amazon/Walmart', url: '/furniture/assembly/details'},
-                        {label: 'Request A Quote', url: '/furniture/assembly/quote'}
+                        {label: 'Shed', url: '/organize/shed'},
+                        {label: 'Room in House', url: '/organize/house/room'},
+                        {label: 'Room in Apartment', url: '/organize/apartment/room'}
+                    ]
+                },
+                {
+                    label: 'Assemble', children: [
+                        {label: 'Ikea Products', url: '/services/assembly/ikea'},
+                        {label: 'Amazon Products', url: '/services/assembly/amazon'},
+                        {label: 'Walmart Products', url: '/services/assembly/walmart'},
                     ]
                 }
             ],
         },
         {
-            label: 'About Us',
+            label: 'About Me',
             children: [
-                { label: 'Our Team' }, // No 'url' property
-                { label: 'Mission Statement', url: '/about/mission' },
+                {label: 'Our Team'}, // No 'url' property
+                {label: 'Mission Statement', url: '/about/mission'},
             ],
         },
-        { label: 'Schedule A Time', url: '/schedule' },
+        {label: 'Schedule A Time', url: '/schedule'},
     ];
 
     return (
         <>
             <Header menuData={menuData}/>
             <div>
+                <CalendarPage />
                 <a href="https://vitejs.dev" target="_blank">
                     <img src={viteLogo} className="logo" alt="Vite logo"/>
                 </a>

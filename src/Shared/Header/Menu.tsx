@@ -1,5 +1,5 @@
 // Recursive component to handle nested menus
-import {MenuItem} from "../../Interface/MenuItem.tsx";
+import {MenuItem} from "../../interfaces/MenuItem.tsx";
 import MenuItemElement from "./MenuItemElement.tsx";
 import styles from './Menu.module.css';
 

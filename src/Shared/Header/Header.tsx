@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import {MenuItem} from "../../Interface/MenuItem.tsx";
+import {MenuItem} from "../../interfaces/MenuItem.tsx";
 import Menu from "./Menu.tsx";
 import styles from './Header.module.css'
 
