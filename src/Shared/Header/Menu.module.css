@@ -3,13 +3,16 @@
     display: flex;
     flex-direction: row;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .menuList > li {
     position: relative;
+    /* Adjust spacing or padding as needed */
 }
 
-.menuList > li > ul { /* Target only direct children */
+.submenu {
     display: none;
     position: absolute;
     top: 100%;
@@ -18,13 +21,22 @@
     padding: 0;
 }
 
-.menuList > li:hover > ul {
+.submenu ul { /* Target the <ul> within the submenu */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    padding: 0;
+}
+
+.menuList > li:hover > .submenu  {
     display: block;
 }
 
-.submenu {
-    position: absolute; /* Adjust positioning as needed */
-    top:  0;/* Adjust top position */
-    left: 0;/* Adjust left position */
-    background-color: #1a405a;
+/* You'll likely want to style your list items and links as well */
+.menuList > li > a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
 }
+
+/* Add hover styles as needed */
